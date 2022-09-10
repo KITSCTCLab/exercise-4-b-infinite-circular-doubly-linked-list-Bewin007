@@ -1,6 +1,6 @@
-length_of_circular_linked_list = int(input())
+length_of_circular_linked_list = int(input("Enter the length of the list:"))
 
-circular_linked_list = list(map(int,input().strip().split(" ")))
+circular_linked_list = list(map(int,input("Enter the data:").strip().split(" ")))
 
 actual_list = []
 
@@ -12,5 +12,5 @@ while len(actual_list) < length_of_circular_linked_list and value < len(circular
         actual_list.append(element)
     value += 1
 
-print(len(actual_list))
-print(" ".join(str(num) for num in actual_list))
+print("Length of the list is ",len(actual_list))
+print("The Actual list is "," ".join(str(num) for num in actual_list))
